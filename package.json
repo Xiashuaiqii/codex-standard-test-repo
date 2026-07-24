@@ -1,0 +1,37 @@
+{
+  "name": "codex-standard-test-repo",
+  "version": "0.1.0",
+  "description": "A minimal repository demonstrating a standard GitHub project structure.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "lint": "node --check src/index.js && node --check test/index.test.js",
+    "test": "node --test",
+    "check": "npm run lint && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xiashuaiqii/codex-standard-test-repo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Xiashuaiqii/codex-standard-test-repo/issues"
+  },
+  "homepage": "https://github.com/Xiashuaiqii/codex-standard-test-repo#readme",
+  "keywords": [
+    "github",
+    "template",
+    "testing",
+    "nodejs"
+  ],
+  "author": "Xiashuaiqii",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}

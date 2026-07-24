@@ -1,0 +1,46 @@
+name: Bug 报告
+description: 报告可复现的问题
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: 感谢你帮助我们改进项目。提交前请先搜索现有 Issue。
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+      description: 清楚说明实际发生了什么。
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 执行……
+        2. 输入……
+        3. 观察到……
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期行为
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: 项目版本
+      placeholder: 例如 v0.1.0
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 运行环境
+      description: 操作系统、Node.js 版本及其他相关信息。
+    validations:
+      required: true
